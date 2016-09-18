@@ -35,16 +35,8 @@ main.obj: ../pin_mux_config.h
 main.obj: C:/ti/CC3200SDK_1.2.0/cc3200-sdk/inc/hw_memmap.h
 main.obj: C:/ti/CC3200SDK_1.2.0/cc3200-sdk/inc/hw_gpio.h
 main.obj: C:/ti/CC3200SDK_1.2.0/cc3200-sdk/driverlib/pin.h
-main.obj: ../APA102.h
+main.obj: ../Valve.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h
-main.obj: ../AudioInput.h
-main.obj: C:/ti/CC3200SDK_1.2.0/cc3200-sdk/driverlib/adc.h
-main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/math.h
-main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h
-main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h
-main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h
-main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/_lock.h
-main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h
 
 ../main.c: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib.h: 
@@ -81,13 +73,5 @@ C:/ti/CC3200SDK_1.2.0/cc3200-sdk/example/common/uart_if.h:
 C:/ti/CC3200SDK_1.2.0/cc3200-sdk/inc/hw_memmap.h: 
 C:/ti/CC3200SDK_1.2.0/cc3200-sdk/inc/hw_gpio.h: 
 C:/ti/CC3200SDK_1.2.0/cc3200-sdk/driverlib/pin.h: 
-../APA102.h: 
+../Valve.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h: 
-../AudioInput.h: 
-C:/ti/CC3200SDK_1.2.0/cc3200-sdk/driverlib/adc.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/math.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/_lock.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h: 

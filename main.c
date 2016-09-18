@@ -38,9 +38,7 @@
 #include "pin_mux_config.h"
 
 
-//Custom tasks
-
-#include <math.h>
+#include "Valve.h"
 
 //*****************************************************************************
 //
@@ -87,7 +85,25 @@ int main(void)
     //Initialize the pin configuration
     PinMuxConfig();
 
+    //Clear the LEDs
+    GPIOPinWrite(LED_PORT, LED_RED_PIN | LED_ORANGE_PIN | LED_GREEN_PIN, 0);
 
+    //Set the green LED
+    GPIOPinWrite(LED_PORT, LED_GREEN_PIN, LED_GREEN_PIN);
+
+    //For debugging purposes
+    //Perform unending self-tests
+    while(1) {
+    	static uint8_t toggle = 0xFF;
+
+    	//Perform self test
+    	//With solenoid switch frequency 6hz, duty cycle 20%
+    	Valve_selfTest(33, 133);
+
+    	GPIOPinWrite(LED_PORT, LED_ORANGE_PIN, LED_ORANGE_PIN & toggle);
+
+    	toggle = ~toggle;
+    }
 
 
 

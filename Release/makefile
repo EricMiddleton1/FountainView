@@ -10,9 +10,7 @@ GEN_OPTS__FLAG := --cmd_file="C:/ti/CC3200SDK_1.2.0/cc3200-sdk/ti_rtos/ti_rtos_c
 GEN_CMDS__FLAG := -l"C:/ti/CC3200SDK_1.2.0/cc3200-sdk/ti_rtos/ti_rtos_config/ccs/Default/configPkg/linker.cmd"
 
 ORDERED_OBJS += \
-"./APA102.obj" \
-"./AudioInput.obj" \
-"./AudioProcessing.obj" \
+"./Valve.obj" \
 "./main.obj" \
 "./network_common.obj" \
 "./rom_pin_mux_config.obj" \
@@ -144,7 +142,7 @@ BIN_OUTPUTS__QUOTED += \
 all: Fountain.out
 
 dependents:
-	-cd C:/ti/CC3200SDK_1.2.0/cc3200-sdk/ti_rtos/ti_rtos_config/ccs/Default && $(MAKE) clean all
+	-cd C:/ti/CC3200SDK_1.2.0/cc3200-sdk/ti_rtos/ti_rtos_config/ccs/Default && $(MAKE) all
 
 # Tool invocations
 Fountain.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/ti/CC3200SDK_1.2.0/cc3200-sdk/ti_rtos/ti_rtos_config/ccs/Default/configPkg/linker.cmd
@@ -165,8 +163,8 @@ Fountain.bin: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "APA102.d" "AudioInput.d" "AudioProcessing.d" "main.d" "network_common.d" "rom_pin_mux_config.d" 
-	-$(RM) "APA102.obj" "AudioInput.obj" "AudioProcessing.obj" "main.obj" "network_common.obj" "rom_pin_mux_config.obj" 
+	-$(RM) "Valve.d" "main.d" "network_common.d" "rom_pin_mux_config.d" 
+	-$(RM) "Valve.obj" "main.obj" "network_common.obj" "rom_pin_mux_config.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

@@ -58,7 +58,7 @@
 //---------------------------------
 //------Board IO definitions-------
 //---------------------------------
-#define LED_PORT	GPIOA1_BASE
+#define LED_PORT		GPIOA1_BASE
 #define LED_RED_PIN		0x02
 #define LED_ORANGE_PIN	0x04
 #define LED_GREEN_PIN	0x08
@@ -74,38 +74,9 @@
 //---------------------------------
 //-----External IO definitions-----
 //---------------------------------
-#define	SOL1_PORT		GPIOA0_BASE
-#define SOL1_PIN		0x08
 
-#define	SOL2_PORT		GPIOA1_BASE
-#define SOL2_PIN		0x10
-
-#define	SOL3_PORT		GPIOA0_BASE
-#define SOL3_PIN		0x40
-
-#define	SOL4_PORT		GPIOA0_BASE
-#define SOL4_PIN		0x10
-
-#define	SOL5_PORT		GPIOA1_BASE
-#define SOL5_PIN		0x40
-
-#define	SOL6_PORT		GPIOA0_BASE
-#define SOL6_PIN		0x80
-
-#define	SOL7_PORT		GPIOA0_BASE
-#define SOL7_PIN		0x04
-
-#define	SOL8_PORT		GPIOA0_BASE
-#define SOL8_PIN		0x20
-
-#define	SOL9_PORT		GPIOA1_BASE
-#define SOL9_PIN		0x01
-
-#define	SOL10_PORT		GPIOA3_BASE
-#define SOL10_PIN		0x40
-
-#define STROBE_PORT		GPIOA0_BASE
-#define STROBE_PIN		0x01
+#define STROBE_PORT
+#define STROBE_PIN
 //---------------------------------
 
 extern void PinMuxConfig(void);
