@@ -8,6 +8,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 // Simplelink includes
 #include "simplelink.h"
@@ -38,7 +39,8 @@
 #include "pin_mux_config.h"
 
 
-#include "Valve.h"
+#include "Fountain.h"
+#include "Frame.h"
 
 //*****************************************************************************
 //
@@ -91,15 +93,33 @@ int main(void)
     //Set the green LED
     GPIOPinWrite(LED_PORT, LED_GREEN_PIN, LED_GREEN_PIN);
 
-    //For debugging purposes
-    //Perform unending self-tests
+    //Create the sinusoid fountain frame
+    FountainSequence sinFrame;
+    FountainSequence_init(&sinFrame, FRAME_WIDTH);
+
+    uint8_t x;
+    for(x = 0; x < FRAME_WIDTH; ++x) {
+    	float t = x*2.f*3.14f/(FRAME_WIDTH);
+
+    	float y = (sin(t) + 1.f) / 4.f;
+
+    	//Add the points to the sequence
+    	Frame_addPoint(&sinFrame, x, y);
+    }
+
+    //Finalize frame (add strobe)
+    Frame_finalize(&sinFrame);
+
+    //Start the fountain control system
+    Fountain_start();
+
     while(1) {
     	static uint8_t toggle = 0xFF;
 
-    	//Perform self test
-    	//With solenoid switch frequency 6hz, duty cycle 20%
-    	Valve_selfTest(33, 133);
+    	//Display the sin frame
+    	FountainSequence_display(&sinFrame, 0);
 
+    	//Toggle orange LED
     	GPIOPinWrite(LED_PORT, LED_ORANGE_PIN, LED_ORANGE_PIN & toggle);
 
     	toggle = ~toggle;

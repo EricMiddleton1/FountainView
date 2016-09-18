@@ -10,6 +10,8 @@ GEN_OPTS__FLAG := --cmd_file="C:/ti/CC3200SDK_1.2.0/cc3200-sdk/ti_rtos/ti_rtos_c
 GEN_CMDS__FLAG := -l"C:/ti/CC3200SDK_1.2.0/cc3200-sdk/ti_rtos/ti_rtos_config/ccs/Default/configPkg/linker.cmd"
 
 ORDERED_OBJS += \
+"./Foutain.obj" \
+"./Frame.obj" \
 "./Valve.obj" \
 "./main.obj" \
 "./network_common.obj" \
@@ -163,8 +165,8 @@ Fountain.bin: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "Valve.d" "main.d" "network_common.d" "rom_pin_mux_config.d" 
-	-$(RM) "Valve.obj" "main.obj" "network_common.obj" "rom_pin_mux_config.obj" 
+	-$(RM) "Foutain.d" "Frame.d" "Valve.d" "main.d" "network_common.d" "rom_pin_mux_config.d" 
+	-$(RM) "Foutain.obj" "Frame.obj" "Valve.obj" "main.obj" "network_common.obj" "rom_pin_mux_config.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

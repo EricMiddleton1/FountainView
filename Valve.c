@@ -105,7 +105,7 @@ void __waitMs(uint32_t ms) {
 	//Convert the number of milliseconds
 	//Into the number of loop cycles required by
 	//UtilsDelay (each loop cycle takes 3 clock cycles)
-	ms *= 26667;
+	ms *= 26667/2;
 
 	//Delay
 	UtilsDelay(ms);

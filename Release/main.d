@@ -4,6 +4,12 @@ main.obj: ../main.c
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/linkage.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/math.h
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/_lock.h
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h
 main.obj: C:/ti/CC3200SDK_1.2.0/cc3200-sdk/simplelink/include/simplelink.h
 main.obj: C:/ti/CC3200SDK_1.2.0/cc3200-sdk/simplelink/include/../user.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h
@@ -35,13 +41,20 @@ main.obj: ../pin_mux_config.h
 main.obj: C:/ti/CC3200SDK_1.2.0/cc3200-sdk/inc/hw_memmap.h
 main.obj: C:/ti/CC3200SDK_1.2.0/cc3200-sdk/inc/hw_gpio.h
 main.obj: C:/ti/CC3200SDK_1.2.0/cc3200-sdk/driverlib/pin.h
-main.obj: ../Valve.h
+main.obj: ../Fountain.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h
+main.obj: ../Frame.h
 
 ../main.c: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/linkage.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/math.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/_lock.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h: 
 C:/ti/CC3200SDK_1.2.0/cc3200-sdk/simplelink/include/simplelink.h: 
 C:/ti/CC3200SDK_1.2.0/cc3200-sdk/simplelink/include/../user.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h: 
@@ -73,5 +86,6 @@ C:/ti/CC3200SDK_1.2.0/cc3200-sdk/example/common/uart_if.h:
 C:/ti/CC3200SDK_1.2.0/cc3200-sdk/inc/hw_memmap.h: 
 C:/ti/CC3200SDK_1.2.0/cc3200-sdk/inc/hw_gpio.h: 
 C:/ti/CC3200SDK_1.2.0/cc3200-sdk/driverlib/pin.h: 
-../Valve.h: 
+../Fountain.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdint.h: 
+../Frame.h: 

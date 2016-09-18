@@ -75,8 +75,8 @@
 //-----External IO definitions-----
 //---------------------------------
 
-#define STROBE_PORT
-#define STROBE_PIN
+#define STROBE_PORT		GPIOA0_BASE
+#define STROBE_PIN		0x01
 //---------------------------------
 
 extern void PinMuxConfig(void);

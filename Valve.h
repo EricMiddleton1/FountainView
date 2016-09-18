@@ -3,6 +3,8 @@
  *
  *  Created on: Sep 17, 2016
  *      Author: eric
+ *
+ *  Note: This system is for generating animations using blocking routines. This is now deprecated.
  */
 
 #ifndef VALVE_H_
